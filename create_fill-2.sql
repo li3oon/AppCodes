@@ -44,6 +44,13 @@ BookID varchar(17) references Book(ISBN) not null,
 GenreID int references Genre(ID) not null
 );
 
+/*связь: одна книга имеет много жанров*/
+create table ReaderBook(
+ID int identity(1,1) primary key not null,
+ReaderID int references Reader(ID) not null,
+BookID varchar(17) references Book(ISBN) not null
+);
+
 /*заполнение*/
 insert into Reader (LastName, FirstName, Patronymic, Email, Phone)
 values
@@ -74,12 +81,18 @@ values
 ('978-5-389-19492-4','3'),
 ('978-5-389-19492-3','2')
 
+insert into ReaderBook (ReaderID, BookID)
+values
+('1', '978-5-389-19492-4'),
+('2', '978-5-389-19492-4'),
+('2', '978-5-389-19492-3')
 
 select *from Reader;
 select *from [User];
 select *from Book;
 select *from Genre;
 select *from BookGenre;
+select *from ReaderBook;
 
 
 
