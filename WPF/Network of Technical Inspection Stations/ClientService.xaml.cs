@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace Network_of_Technical_Inspection_Stations
 {
     /// <summary>
-    /// Логика взаимодействия для Clients.xaml
+    /// Логика взаимодействия для ClientService.xaml
     /// </summary>
-    public partial class Clients : Page
+    public partial class ClientService : Page
     {
-        public Clients()
+        public ClientService()
         {
             InitializeComponent();
-            ClientsGrid.ItemsSource = DataBase.GetContext().Client.ToList();
         }
     }
 }

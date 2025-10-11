@@ -15,7 +15,7 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Content="Спиоск услуг" Width="150" Grid.Row="1" Name="BtnService" Click="BtnService1_Click"></Button>
+        <Button Content="Список услуг" Width="150" Grid.Row="1" Name="BtnService" Click="BtnService1_Click"></Button>
         <Button Content="Оказанные услуги" Width="150" Grid.Row="2" Name="BtnClientService1" Click="BtnClientService1_Click"></Button>
     </Grid>
 </Page>

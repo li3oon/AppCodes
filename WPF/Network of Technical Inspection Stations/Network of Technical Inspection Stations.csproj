@@ -190,11 +190,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditService.xaml.cs">
+      <DependentUpon>AddEditService.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Client.cs">
       <DependentUpon>DataBase1.tt</DependentUpon>
     </Compile>
     <Compile Include="Clients.xaml.cs">
       <DependentUpon>Clients.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClientService.xaml.cs">
+      <DependentUpon>ClientService.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataBase1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -229,7 +235,15 @@
     <Compile Include="User.cs">
       <DependentUpon>DataBase1.tt</DependentUpon>
     </Compile>
+    <Page Include="AddEditService.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Clients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientService.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -6,13 +6,28 @@
       xmlns:local="clr-namespace:Network_of_Technical_Inspection_Stations"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Services">
+      Title="Services" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <Button Width="200" Grid.Row="0" Name="BtnAddService" Click="BtnAddService_Click" Visibility="Collapsed" Content="Добавить услугу"/>
+        <DataGrid x:Name="ServicesGrid" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название услуги" Binding="{Binding NameService}" Width="*"/>
+                <DataGridTextColumn Header="Описание услуги" Binding="{Binding DescriptionService}" Width="*"/>
+                <DataGridTextColumn Header="Стоимость услуги" Binding="{Binding Cost}" Width="*"/>
+                <DataGridTemplateColumn Width="auto" Header="Редактировать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Left" Width="200" Grid.Row="1" Name="BtnAddService" Click="BtnAddService_Click" Visibility="Collapsed" Content="Добавить услугу"/>
+        <Button HorizontalAlignment="Right" Width="200" Grid.Row="1" Name="BtnDelService" Click="BtnDelService_Click" Visibility="Collapsed" Content="Удалить услугу"/>
     </Grid>
 </Page>
