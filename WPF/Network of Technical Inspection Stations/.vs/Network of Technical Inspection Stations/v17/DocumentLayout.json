@@ -3,11 +3,55 @@
   "WorkspaceRootPath": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\services.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:services.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\clientview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:clientview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\technicianview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:technicianview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\clientview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:clientview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\services.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:services.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\technicianview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:technicianview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\network of technical inspection stations\\database1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:database1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{449C7509-CB50-4767-8E1F-624471059B9E}|Network of Technical Inspection Stations.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,6 +67,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Login.xaml.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Login.xaml.cs",
+              "RelativeToolTip": "Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T00:21:21.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Services.xaml.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Services.xaml.cs",
+              "RelativeDocumentMoniker": "Services.xaml.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Services.xaml.cs",
+              "RelativeToolTip": "Services.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T00:04:46.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Services.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Services.xaml",
+              "RelativeDocumentMoniker": "Services.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Services.xaml",
+              "RelativeToolTip": "Services.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T00:04:34.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientView.xaml.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\ClientView.xaml.cs",
+              "RelativeDocumentMoniker": "ClientView.xaml.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\ClientView.xaml.cs",
+              "RelativeToolTip": "ClientView.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T23:57:59.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientView.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\ClientView.xaml",
+              "RelativeDocumentMoniker": "ClientView.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\ClientView.xaml",
+              "RelativeToolTip": "ClientView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T23:56:41.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Login.xaml",
+              "RelativeDocumentMoniker": "Login.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Login.xaml",
+              "RelativeToolTip": "Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T23:52:43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TechnicianView.xaml.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\TechnicianView.xaml.cs",
+              "RelativeDocumentMoniker": "TechnicianView.xaml.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\TechnicianView.xaml.cs",
+              "RelativeToolTip": "TechnicianView.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T23:49:21.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TechnicianView.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\TechnicianView.xaml",
+              "RelativeDocumentMoniker": "TechnicianView.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\TechnicianView.xaml",
+              "RelativeToolTip": "TechnicianView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T23:40:00.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T23:29:52.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataBase1.Context.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\DataBase1.Context.cs",
+              "RelativeDocumentMoniker": "DataBase1.Context.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\DataBase1.Context.cs",
+              "RelativeToolTip": "DataBase1.Context.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T22:46:11.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Manager.cs",
+              "RelativeDocumentMoniker": "Manager.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\Manager.cs",
+              "RelativeToolTip": "Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T21:32:12.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -34,13 +216,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Network of Technical Inspection Stations\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T18:57:47.15Z",
               "EditorCaption": ""

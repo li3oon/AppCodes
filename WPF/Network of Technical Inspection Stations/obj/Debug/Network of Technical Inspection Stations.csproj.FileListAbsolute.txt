@@ -1,0 +1,123 @@
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.csproj.AssemblyReference.cache
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\ClientView.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Login.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\MainWindow.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\TechnicianView.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\App.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations_MarkupCompile.cache
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations_MarkupCompile.lref
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Network of Technical Inspection Stations.exe.config
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Network of Technical Inspection Stations.exe
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Network of Technical Inspection Stations.pdb
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\ClientView.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Login.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\MainWindow.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\TechnicianView.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.g.resources
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network_of_Technical_Inspection_Stations.Properties.Resources.resources
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.csproj.GenerateResource.cache
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.csproj.CoreCompileInputs.cache
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.exe
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.pdb
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Azure.Core.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Azure.Identity.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\EntityFramework.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\EntityFramework.SqlServer.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.Cryptography.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Options.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Identity.Client.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Buffers.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.ClientModel.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Formats.Asn1.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IO.Pipelines.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Memory.Data.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Memory.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Numerics.Vectors.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.AccessControl.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Cryptography.Pkcs.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Principal.Windows.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Text.Encodings.Web.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Text.Json.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.ValueTuple.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Azure.Core.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Azure.Identity.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\EntityFramework.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\EntityFramework.SqlServer.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.Cryptography.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Options.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Identity.Client.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Buffers.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.ClientModel.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Formats.Asn1.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.IO.Pipelines.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Memory.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Memory.Data.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Numerics.Vectors.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.AccessControl.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Security.Principal.Windows.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Text.Encodings.Web.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Text.Json.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\cs\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\pl\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations.exe.config
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network of Technical Inspection Stations_Content.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Network .C4461C54.Up2Date
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Clients.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Services.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\App.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Clients.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\Services.baml
