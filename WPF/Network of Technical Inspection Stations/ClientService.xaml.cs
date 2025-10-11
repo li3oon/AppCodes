@@ -23,6 +23,27 @@ namespace Network_of_Technical_Inspection_Stations
         public ClientService()
         {
             InitializeComponent();
+            ClientServiceGrid.ItemsSource = DataBase.GetContext().Order.ToList();
+        }
+
+        private void BtnAddClientService_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelClientService_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
         }
     }
 }

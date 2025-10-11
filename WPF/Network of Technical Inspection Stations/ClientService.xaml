@@ -6,9 +6,44 @@
       xmlns:local="clr-namespace:Network_of_Technical_Inspection_Stations"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ClientService">
+      Title="ClientService" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="ClientServiceGrid" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Клиент" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}{0} {1} {2}">
+                                        <Binding Path="Client.LastName" />
+                                        <Binding Path="Client.FirstName" />
+                                        <Binding Path="Client.Patronymic" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Оказанная услуга" Binding="{Binding Service.NameService}" Width="*"/>
+                <DataGridTextColumn Header="Дата оказания услуги" Binding="{Binding CreatedDate}" Width="*"/>
+                <DataGridTextColumn Header="Дата выполнения услуги" Binding="{Binding CompletedDate}" Width="*"/>
+                <DataGridTextColumn Header="Статус услуги" Binding="{Binding Status.Progress}" Width="*"/>
+                <DataGridTemplateColumn Width="auto" Header="Редактировать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Left" Width="200" Grid.Row="1" Name="BtnAddClientService" Click="BtnAddClientService_Click" Visibility="Collapsed" Content="Добавить"/>
+        <Button HorizontalAlignment="Right" Width="200" Grid.Row="1" Name="BtnDelClientService" Click="BtnDelClientService_Click" Visibility="Collapsed" Content="Удалить"/>
     </Grid>
 </Page>
