@@ -125,3 +125,5 @@ D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection St
 D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\ClientService.baml
 D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\AddEditService.g.cs
 D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\AddEditService.baml
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\AddEditClientService.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Network of Technical Inspection Stations\obj\Debug\AddEditClientService.baml

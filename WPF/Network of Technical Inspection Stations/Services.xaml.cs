@@ -55,7 +55,7 @@ namespace Network_of_Technical_Inspection_Stations
                 {
                     if (column is DataGridTemplateColumn templateColumn)
                     {
-                        if (templateColumn.Header != null && templateColumn.Header.ToString() == "Редактировать")
+                        if (templateColumn.Header == null)
                         {
                             templateColumn.Visibility = Visibility.Collapsed;
                         }

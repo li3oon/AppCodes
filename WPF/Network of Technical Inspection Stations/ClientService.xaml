@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <DataGrid x:Name="ClientServiceGrid" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Клиент" Width="*">
+                <DataGridTemplateColumn Header="Данные клиента" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock>
@@ -34,7 +34,7 @@
                 <DataGridTextColumn Header="Дата оказания услуги" Binding="{Binding CreatedDate}" Width="*"/>
                 <DataGridTextColumn Header="Дата выполнения услуги" Binding="{Binding CompletedDate}" Width="*"/>
                 <DataGridTextColumn Header="Статус услуги" Binding="{Binding Status.Progress}" Width="*"/>
-                <DataGridTemplateColumn Width="auto" Header="Редактировать">
+                <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"/>

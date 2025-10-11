@@ -20,8 +20,8 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Название услуги:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0"/>
-        <TextBlock Text="Описание услуги" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
-        <TextBlock Text="Стоимость услуги" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
+        <TextBlock Text="Описание услуги:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
+        <TextBlock Text="Стоимость услуги:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
 
         <TextBox Text="{Binding NameService}" MaxLength="100" Name="NameService" Width="500" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1"/>
         <TextBox Text="{Binding DescriptionService}" Name="DescriptionService" Width="500" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1"/>

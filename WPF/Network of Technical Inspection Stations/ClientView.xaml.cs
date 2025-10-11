@@ -34,7 +34,7 @@ namespace Network_of_Technical_Inspection_Stations
 
         private void BtnClientService1_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new ClientService(_currentUser));
         }
     }
 }

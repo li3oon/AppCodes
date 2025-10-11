@@ -18,7 +18,7 @@
                 <DataGridTextColumn Header="Название услуги" Binding="{Binding NameService}" Width="*"/>
                 <DataGridTextColumn Header="Описание услуги" Binding="{Binding DescriptionService}" Width="*"/>
                 <DataGridTextColumn Header="Стоимость услуги" Binding="{Binding Cost}" Width="*"/>
-                <DataGridTemplateColumn Width="auto" Header="Редактировать">
+                <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"/>
