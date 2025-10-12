@@ -77,10 +77,15 @@ namespace Network_of_Technical_Inspection_Stations
             {
                 try
                 {
-                    DataBase.GetContext().Service.RemoveRange(servicesForRemoving);
+                    foreach (var service in servicesForRemoving)
+                    {
+                        service.IsDeleted = true;
+                    }
                     DataBase.GetContext().SaveChanges();
-                    MessageBox.Show("Данные удалены!");
-                    ServicesGrid.ItemsSource = DataBase.GetContext().Service.ToList();
+                    MessageBox.Show("Услуги помечены как удалённые!");
+                    // Обновить отображение, исключая удалённые услуги
+                    ServicesGrid.ItemsSource = DataBase.GetContext().Service.Where(s => !s.IsDeleted).ToList();
+
                 }
                 catch (Exception ex)
                 {
@@ -91,7 +96,7 @@ namespace Network_of_Technical_Inspection_Stations
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            /*(sender as Button).DataContext as Service*/
+            //(sender as Button).DataContext as Service
             Manager.MainFrame.Navigate(new AddEditService((sender as Button).DataContext as Service));
         }
 

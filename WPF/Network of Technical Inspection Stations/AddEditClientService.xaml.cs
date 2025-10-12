@@ -53,10 +53,29 @@ namespace Network_of_Technical_Inspection_Stations
             else
                 CurrentOrder.CreatedDate = createdDate.Value;
 
-            if (completedDate.Value < createdDate.Value)
-                errors.AppendLine("Дата завершения не может быть раньше даты создания.");
+            // Устанавливаем Id-шники выбранных сущностей
+            if (ComboClientID.SelectedItem != null)
+                CurrentOrder.IdClient = ((Client)ComboClientID.SelectedItem).ID;
+            if (ComboNameService.SelectedItem != null)
+                CurrentOrder.IdService = ((Service)ComboNameService.SelectedItem).ID;
+            if (ComboStatus.SelectedItem != null)
+                CurrentOrder.IdStatus = ((Status)ComboStatus.SelectedItem).ID;
+
+            // Проверяем дату завершения только если статус процесса завершения
+            if (ComboStatus.SelectedItem != null && ((Status)ComboStatus.SelectedItem).Progress == "Завершено")
+            {
+                if (completedDate == null)
+                    errors.AppendLine("Укажите дату завершения.");
+                else if (completedDate.Value < createdDate.Value)
+                    errors.AppendLine("Дата завершения не может быть раньше даты создания.");
+                else
+                    CurrentOrder.CompletedDate = completedDate;
+            }
             else
-                CurrentOrder.CompletedDate = completedDate;
+            {
+                // Если не завершено — дата завершения не обязательна
+                CurrentOrder.CompletedDate = null;
+            }
 
             if (errors.Length > 0)
             {

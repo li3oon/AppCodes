@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -113,7 +114,11 @@ namespace Network_of_Technical_Inspection_Stations
         {
             if (Visibility == Visibility.Visible)
             {
-                DataBase.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                ClientServiceGrid.ItemsSource = DataBase.GetContext().Order.ToList();
+                DataBase.GetContext().ChangeTracker.Entries()
+                .Where(p => p.State != EntityState.Added)
+                .ToList()
+                .ForEach(p => p.Reload());
                 ConfigureUIBasedOnRole();
             }
         }
