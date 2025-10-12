@@ -115,10 +115,7 @@ namespace Network_of_Technical_Inspection_Stations
             if (Visibility == Visibility.Visible)
             {
                 ClientServiceGrid.ItemsSource = DataBase.GetContext().Order.ToList();
-                DataBase.GetContext().ChangeTracker.Entries()
-                .Where(p => p.State != EntityState.Added)
-                .ToList()
-                .ForEach(p => p.Reload());
+                DataBase.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
                 ConfigureUIBasedOnRole();
             }
         }
