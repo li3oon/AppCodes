@@ -45,6 +45,7 @@ ID int identity(1,1) primary key not null,
 TicketCode nvarchar(12) unique not null,
 TripID int references Trip(ID) not null,
 Class nvarchar(1) not null check(Class in ('E', 'B', 'F')),
+Place int not null check(Place > 0 and Place <= 50),
 CustomerID int references Customer(ID) not null,
 Cost money not null check(Cost > 0)
 );
@@ -69,10 +70,10 @@ insert into Trip(DirectionID, DepartureDate, ArrivalDate, Airplane) values
 ('2', '2025-04-30 11:00:00', '2025-05-02 10:00:00', 'า๓-134'),
 ('2', '2025-03-21 10:00:00', '2025-03-23 10:00:00', 'ภํ-24')
 
-insert into Ticket(TicketCode, TripID, Class, CustomerID, Cost) values
-('123456789สำ', '1', 'B', '1', '10300'),
-('223456789สำ', '2', 'B', '1', '10300'),
-('123456789สร', '3', 'F', '3', '9300')
+insert into Ticket(TicketCode, TripID, Class, Place, CustomerID, Cost) values
+('123456789สำ', '1', 'B', '3', '1', '10300'),
+('223456789สำ', '2', 'B', '5', '1', '10300'),
+('123456789สร', '3', 'F', '25', '3', '9300')
 
 /*โ๛โ๎ไ*/
 select *from Customer;
