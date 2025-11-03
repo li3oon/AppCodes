@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LastName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Patronymic" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DriverLicenseID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DriverLicense" Relationship="Self.FK__Driver__DriverLi__5070F446" FromRole="Driver" ToRole="DriverLicense" />
+    <NavigationProperty Name="DriverVoyage" Relationship="Self.FK__DriverVoy__Drive__5FB337D6" FromRole="Driver" ToRole="DriverVoyage" />
+    <NavigationProperty Name="User" Relationship="Self.FK__User__DriverID__5535A963" FromRole="Driver" ToRole="User" />
+  </EntityType>
+  <EntityType Name="DriverLicense">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateOfIssue" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DateOfExp" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Driver" Relationship="Self.FK__Driver__DriverLi__5070F446" FromRole="DriverLicense" ToRole="Driver" />
+  </EntityType>
+  <EntityType Name="DriverVoyage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DriverID" Type="Int32" Nullable="false" />
+    <Property Name="VoyageID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Driver" Relationship="Self.FK__DriverVoy__Drive__5FB337D6" FromRole="DriverVoyage" ToRole="Driver" />
+    <NavigationProperty Name="Voyage" Relationship="Self.FK__DriverVoy__Voyag__60A75C0F" FromRole="DriverVoyage" ToRole="Voyage" />
+  </EntityType>
+  <EntityType Name="Route">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PointOfDeparture" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Destination" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Voyage" Relationship="Self.FK__Voyage__RouteID__5BE2A6F2" FromRole="Route" ToRole="Voyage" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DriverID" Type="Int32" />
+    <NavigationProperty Name="Driver" Relationship="Self.FK__User__DriverID__5535A963" FromRole="User" ToRole="Driver" />
+  </EntityType>
+  <EntityType Name="Voyage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameCompany" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RouteID" Type="Int32" />
+    <Property Name="DepartureDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ArrivalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="DriverVoyage" Relationship="Self.FK__DriverVoy__Voyag__60A75C0F" FromRole="Voyage" ToRole="DriverVoyage" />
+    <NavigationProperty Name="Route" Relationship="Self.FK__Voyage__RouteID__5BE2A6F2" FromRole="Voyage" ToRole="Route" />
+  </EntityType>
+  <Association Name="FK__Driver__DriverLi__5070F446">
+    <End Role="DriverLicense" Type="Self.DriverLicense" Multiplicity="1" />
+    <End Role="Driver" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DriverLicense">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Driver">
+        <PropertyRef Name="DriverLicenseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DriverVoy__Drive__5FB337D6">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="DriverVoyage" Type="Self.DriverVoyage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DriverVoyage">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__DriverID__5535A963">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DriverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DriverVoy__Voyag__60A75C0F">
+    <End Role="Voyage" Type="Self.Voyage" Multiplicity="1" />
+    <End Role="DriverVoyage" Type="Self.DriverVoyage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voyage">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DriverVoyage">
+        <PropertyRef Name="VoyageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Voyage__RouteID__5BE2A6F2">
+    <End Role="Route" Type="Self.Route" Multiplicity="0..1" />
+    <End Role="Voyage" Type="Self.Voyage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Route">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Voyage">
+        <PropertyRef Name="RouteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataBase3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Driver" EntityType="Self.Driver" />
+    <EntitySet Name="DriverLicense" EntityType="Self.DriverLicense" />
+    <EntitySet Name="DriverVoyage" EntityType="Self.DriverVoyage" />
+    <EntitySet Name="Route" EntityType="Self.Route" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="Voyage" EntityType="Self.Voyage" />
+    <AssociationSet Name="FK__Driver__DriverLi__5070F446" Association="Self.FK__Driver__DriverLi__5070F446">
+      <End Role="DriverLicense" EntitySet="DriverLicense" />
+      <End Role="Driver" EntitySet="Driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DriverVoy__Drive__5FB337D6" Association="Self.FK__DriverVoy__Drive__5FB337D6">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="DriverVoyage" EntitySet="DriverVoyage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__DriverID__5535A963" Association="Self.FK__User__DriverID__5535A963">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DriverVoy__Voyag__60A75C0F" Association="Self.FK__DriverVoy__Voyag__60A75C0F">
+      <End Role="Voyage" EntitySet="Voyage" />
+      <End Role="DriverVoyage" EntitySet="DriverVoyage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Voyage__RouteID__5BE2A6F2" Association="Self.FK__Voyage__RouteID__5BE2A6F2">
+      <End Role="Route" EntitySet="Route" />
+      <End Role="Voyage" EntitySet="Voyage" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
