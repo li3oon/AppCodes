@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище DataBase" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ISBN" />
+          </Key>
+          <Property Name="ISBN" Type="varchar" MaxLength="17" Nullable="false" />
+          <Property Name="NameBook" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="AuthorLastName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="AuthorFirstName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="AuthorPatronymic" Type="nvarchar" MaxLength="60" />
+          <Property Name="YearOfPublication" Type="date" Nullable="false" />
+          <Property Name="Publisher" Type="nvarchar" MaxLength="60" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BookGenre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookID" Type="varchar" MaxLength="17" Nullable="false" />
+          <Property Name="GenreID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Genre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameGenre" Type="nvarchar" MaxLength="60" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Reader">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="Patronymic" Type="nvarchar" MaxLength="60" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ReaderBook">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReaderID" Type="int" Nullable="false" />
+          <Property Name="BookID" Type="varchar" MaxLength="17" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="Role" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="ReaderID" Type="int" />
+        </EntityType>
+        <Association Name="FK__BookGenre__BookI__59063A47">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ISBN" />
+            </Principal>
+            <Dependent Role="BookGenre">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookGenre__Genre__59FA5E80">
+          <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
+          <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genre">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookGenre">
+              <PropertyRef Name="GenreID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ReaderBoo__BookI__5DCAEF64">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ISBN" />
+            </Principal>
+            <Dependent Role="ReaderBook">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ReaderBoo__Reade__5CD6CB2B">
+          <End Role="Reader" Type="Self.Reader" Multiplicity="1" />
+          <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reader">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderBook">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__User__ReaderID__5165187F">
+          <End Role="Reader" Type="Self.Reader" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reader">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище DataBaseContainer">
+          <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BookGenre" EntityType="Self.BookGenre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reader" EntityType="Self.Reader" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReaderBook" EntityType="Self.ReaderBook" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__BookGenre__BookI__59063A47" Association="Self.FK__BookGenre__BookI__59063A47">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="BookGenre" EntitySet="BookGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookGenre__Genre__59FA5E80" Association="Self.FK__BookGenre__Genre__59FA5E80">
+            <End Role="Genre" EntitySet="Genre" />
+            <End Role="BookGenre" EntitySet="BookGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ReaderBoo__BookI__5DCAEF64" Association="Self.FK__ReaderBoo__BookI__5DCAEF64">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="ReaderBook" EntitySet="ReaderBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ReaderBoo__Reade__5CD6CB2B" Association="Self.FK__ReaderBoo__Reade__5CD6CB2B">
+            <End Role="Reader" EntitySet="Reader" />
+            <End Role="ReaderBook" EntitySet="ReaderBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__User__ReaderID__5165187F" Association="Self.FK__User__ReaderID__5165187F">
+            <End Role="Reader" EntitySet="Reader" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ISBN" />
+          </Key>
+          <Property Name="ISBN" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameBook" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AuthorLastName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AuthorFirstName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AuthorPatronymic" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="YearOfPublication" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Publisher" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="BookGenre" Relationship="Self.FK__BookGenre__BookI__59063A47" FromRole="Book" ToRole="BookGenre" />
+          <NavigationProperty Name="ReaderBook" Relationship="Self.FK__ReaderBoo__BookI__5DCAEF64" FromRole="Book" ToRole="ReaderBook" />
+        </EntityType>
+        <EntityType Name="BookGenre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookID" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GenreID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Book" Relationship="Self.FK__BookGenre__BookI__59063A47" FromRole="BookGenre" ToRole="Book" />
+          <NavigationProperty Name="Genre" Relationship="Self.FK__BookGenre__Genre__59FA5E80" FromRole="BookGenre" ToRole="Genre" />
+        </EntityType>
+        <EntityType Name="Genre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameGenre" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="BookGenre" Relationship="Self.FK__BookGenre__Genre__59FA5E80" FromRole="Genre" ToRole="BookGenre" />
+        </EntityType>
+        <EntityType Name="Reader">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Patronymic" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ReaderBook" Relationship="Self.FK__ReaderBoo__Reade__5CD6CB2B" FromRole="Reader" ToRole="ReaderBook" />
+          <NavigationProperty Name="User" Relationship="Self.FK__User__ReaderID__5165187F" FromRole="Reader" ToRole="User" />
+        </EntityType>
+        <EntityType Name="ReaderBook">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReaderID" Type="Int32" Nullable="false" />
+          <Property Name="BookID" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Book" Relationship="Self.FK__ReaderBoo__BookI__5DCAEF64" FromRole="ReaderBook" ToRole="Book" />
+          <NavigationProperty Name="Reader" Relationship="Self.FK__ReaderBoo__Reade__5CD6CB2B" FromRole="ReaderBook" ToRole="Reader" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReaderID" Type="Int32" />
+          <NavigationProperty Name="Reader" Relationship="Self.FK__User__ReaderID__5165187F" FromRole="User" ToRole="Reader" />
+        </EntityType>
+        <Association Name="FK__BookGenre__BookI__59063A47">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ISBN" />
+            </Principal>
+            <Dependent Role="BookGenre">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ReaderBoo__BookI__5DCAEF64">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ISBN" />
+            </Principal>
+            <Dependent Role="ReaderBook">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookGenre__Genre__59FA5E80">
+          <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
+          <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genre">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookGenre">
+              <PropertyRef Name="GenreID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ReaderBoo__Reade__5CD6CB2B">
+          <End Role="Reader" Type="Self.Reader" Multiplicity="1" />
+          <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reader">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderBook">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__User__ReaderID__5165187F">
+          <End Role="Reader" Type="Self.Reader" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reader">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DataBase2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Book" EntityType="Self.Book" />
+          <EntitySet Name="BookGenre" EntityType="Self.BookGenre" />
+          <EntitySet Name="Genre" EntityType="Self.Genre" />
+          <EntitySet Name="Reader" EntityType="Self.Reader" />
+          <EntitySet Name="ReaderBook" EntityType="Self.ReaderBook" />
+          <EntitySet Name="User" EntityType="Self.User" />
+          <AssociationSet Name="FK__BookGenre__BookI__59063A47" Association="Self.FK__BookGenre__BookI__59063A47">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="BookGenre" EntitySet="BookGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ReaderBoo__BookI__5DCAEF64" Association="Self.FK__ReaderBoo__BookI__5DCAEF64">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="ReaderBook" EntitySet="ReaderBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookGenre__Genre__59FA5E80" Association="Self.FK__BookGenre__Genre__59FA5E80">
+            <End Role="Genre" EntitySet="Genre" />
+            <End Role="BookGenre" EntitySet="BookGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ReaderBoo__Reade__5CD6CB2B" Association="Self.FK__ReaderBoo__Reade__5CD6CB2B">
+            <End Role="Reader" EntitySet="Reader" />
+            <End Role="ReaderBook" EntitySet="ReaderBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__User__ReaderID__5165187F" Association="Self.FK__User__ReaderID__5165187F">
+            <End Role="Reader" EntitySet="Reader" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DataBaseContainer" CdmEntityContainer="DataBase2">
+          <EntitySetMapping Name="Book">
+            <EntityTypeMapping TypeName="DataBase.Book">
+              <MappingFragment StoreEntitySet="Book">
+                <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+                <ScalarProperty Name="NameBook" ColumnName="NameBook" />
+                <ScalarProperty Name="AuthorLastName" ColumnName="AuthorLastName" />
+                <ScalarProperty Name="AuthorFirstName" ColumnName="AuthorFirstName" />
+                <ScalarProperty Name="AuthorPatronymic" ColumnName="AuthorPatronymic" />
+                <ScalarProperty Name="YearOfPublication" ColumnName="YearOfPublication" />
+                <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BookGenre">
+            <EntityTypeMapping TypeName="DataBase.BookGenre">
+              <MappingFragment StoreEntitySet="BookGenre">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Genre">
+            <EntityTypeMapping TypeName="DataBase.Genre">
+              <MappingFragment StoreEntitySet="Genre">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameGenre" ColumnName="NameGenre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reader">
+            <EntityTypeMapping TypeName="DataBase.Reader">
+              <MappingFragment StoreEntitySet="Reader">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReaderBook">
+            <EntityTypeMapping TypeName="DataBase.ReaderBook">
+              <MappingFragment StoreEntitySet="ReaderBook">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="DataBase.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

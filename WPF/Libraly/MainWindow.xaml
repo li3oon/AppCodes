@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="14" Text="Библиотека" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
+        <Button FontSize="14" Content="Назад" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click" Grid.Row="0"/>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1"/>
     </Grid>
 </Window>

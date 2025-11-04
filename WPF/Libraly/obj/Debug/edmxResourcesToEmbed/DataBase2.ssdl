@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DataBase" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="varchar" MaxLength="17" Nullable="false" />
+    <Property Name="NameBook" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AuthorLastName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="AuthorFirstName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="AuthorPatronymic" Type="nvarchar" MaxLength="60" />
+    <Property Name="YearOfPublication" Type="date" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookGenre">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookID" Type="varchar" MaxLength="17" Nullable="false" />
+    <Property Name="GenreID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameGenre" Type="nvarchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reader">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Patronymic" Type="nvarchar" MaxLength="60" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReaderBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReaderID" Type="int" Nullable="false" />
+    <Property Name="BookID" Type="varchar" MaxLength="17" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="ReaderID" Type="int" />
+  </EntityType>
+  <Association Name="FK__BookGenre__BookI__59063A47">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="BookGenre">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookGenre__Genre__59FA5E80">
+    <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
+    <End Role="BookGenre" Type="Self.BookGenre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genre">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BookGenre">
+        <PropertyRef Name="GenreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReaderBoo__BookI__5DCAEF64">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="ReaderBook">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReaderBoo__Reade__5CD6CB2B">
+    <End Role="Reader" Type="Self.Reader" Multiplicity="1" />
+    <End Role="ReaderBook" Type="Self.ReaderBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ReaderBook">
+        <PropertyRef Name="ReaderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__ReaderID__5165187F">
+    <End Role="Reader" Type="Self.Reader" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="ReaderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище DataBaseContainer">
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookGenre" EntityType="Self.BookGenre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reader" EntityType="Self.Reader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReaderBook" EntityType="Self.ReaderBook" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BookGenre__BookI__59063A47" Association="Self.FK__BookGenre__BookI__59063A47">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="BookGenre" EntitySet="BookGenre" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookGenre__Genre__59FA5E80" Association="Self.FK__BookGenre__Genre__59FA5E80">
+      <End Role="Genre" EntitySet="Genre" />
+      <End Role="BookGenre" EntitySet="BookGenre" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReaderBoo__BookI__5DCAEF64" Association="Self.FK__ReaderBoo__BookI__5DCAEF64">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="ReaderBook" EntitySet="ReaderBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReaderBoo__Reade__5CD6CB2B" Association="Self.FK__ReaderBoo__Reade__5CD6CB2B">
+      <End Role="Reader" EntitySet="Reader" />
+      <End Role="ReaderBook" EntitySet="ReaderBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__ReaderID__5165187F" Association="Self.FK__User__ReaderID__5165187F">
+      <End Role="Reader" EntitySet="Reader" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

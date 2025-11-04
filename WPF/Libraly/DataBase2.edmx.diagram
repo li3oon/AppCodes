@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fec91cbc5655402995f18e80109c8779" Name="Diagram1">
+        <EntityTypeShape EntityType="DataBase.Book" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase.BookGenre" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase.Genre" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase.Reader" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase.ReaderBook" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase.User" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="DataBase.FK__BookGenre__BookI__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase.FK__ReaderBoo__BookI__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase.FK__BookGenre__Genre__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase.FK__ReaderBoo__Reade__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase.FK__User__ReaderID__5165187F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
