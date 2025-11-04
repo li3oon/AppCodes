@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,22 @@ namespace Automation_Of_Bus_Routes.Pages
         public VoyagesList()
         {
             InitializeComponent();
+            VoyageGrid.ItemsSource = DataBase3.GetContext().Voyage.ToList();
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditVoyagesList());
+        }
+
+        private void BtnDel_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

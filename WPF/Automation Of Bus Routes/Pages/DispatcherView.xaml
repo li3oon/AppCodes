@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Automation_Of_Bus_Routes.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1200"
       Title="DispatcherView">
 
     <Grid>
@@ -16,7 +16,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="1" Width="200" FontSize="14" Content="Список рейсов" Name="BtnVoyages" Click="BtnVoyages_Click"/>
+        <Button Grid.Row="1" Width="200" FontSize="14" Content="Список рейсов" Name="BtnVoyages" Click="BtnVoyags_Click"/>
         <Button Grid.Row="3" Width="200" FontSize="14" Content="Рейсы с водителями" Name="BtnDriverVoyage" Click="BtnDriverVoyage_Click"/>
     </Grid>
 </Page>

@@ -5,10 +5,34 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Automation_Of_Bus_Routes.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1200"
       Title="VoyagesList">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="VoyageGrid" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер рейса" Binding="{Binding Voyage.ID}" Width="*"/>
+                <DataGridTextColumn Header="Компания" Binding="{Binding NameCompany}" Width="*"/>
+                <DataGridTextColumn Header="Номер маршрута" Binding="{Binding Route.ID}" Width="*"/>
+                <DataGridTextColumn Header="Пункт отправления" Binding="{Binding Route.PointOfDeparture}" Width="*"/>
+                <DataGridTextColumn Header="Пункт назначения" Binding="{Binding Route.Destination}" Width="*"/>
+                <DataGridTextColumn Header="Дата отправления" Binding="{Binding DepartureDate}" Width="*"/>
+                <DataGridTextColumn Header="Дата прибытия" Binding="{Binding ArrivalDate}" Width="*"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактирование" Name="BtnEdit" Click="BtnEdit_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button FontSize="14" HorizontalAlignment="Left" Width="200" Grid.Row="1" Name="BtnAdd" Click="BtnAdd_Click"  Content="Добавить"/>
+        <Button FontSize="14" HorizontalAlignment="Right" Width="200" Grid.Row="1" Name="BtnDel" Click="BtnDel_Click" Content="Удалить"/>
     </Grid>
 </Page>

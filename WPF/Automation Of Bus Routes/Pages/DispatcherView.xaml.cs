@@ -34,5 +34,10 @@ namespace Automation_Of_Bus_Routes.Pages
         {
             Manager.MainFrame.Navigate(new DriverVoyageList(Manager.CurrentUser));
         }
+
+        private void BtnVoyags_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new VoyagesList());
+        }
     }
 }

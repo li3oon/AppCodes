@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\dispatcherview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\dispatcherview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\voyageslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\voyageslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\drivervoyagelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\drivervoyagelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\voyageslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\voyageslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\drivervoyagelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\drivervoyagelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\dispatcherview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\dispatcherview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\automation of bus routes\\pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB403B67-5C24-4ACB-A9BC-C66F8AF465D2}|Automation Of Bus Routes.csproj|solutionrelative:pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,78 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DispatcherView.xaml",
-              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DispatcherView.xaml",
-              "RelativeDocumentMoniker": "Pages\\DispatcherView.xaml",
-              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DispatcherView.xaml",
-              "RelativeToolTip": "Pages\\DispatcherView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T06:00:40.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Manager.cs",
-              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Manager.cs",
-              "RelativeDocumentMoniker": "Manager.cs",
-              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Manager.cs",
-              "RelativeToolTip": "Manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T05:59:41.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\Login.xaml.cs",
-              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\Login.xaml.cs",
-              "RelativeToolTip": "Pages\\Login.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T05:48:27.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pages\\DispatcherView.xaml.cs",
-              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DispatcherView.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\DispatcherView.xaml.cs",
-              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DispatcherView.xaml.cs",
-              "RelativeToolTip": "Pages\\DispatcherView.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T05:47:37.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Pages\\DriverVoyageList.xaml.cs",
+              "Title": "DriverVoyageList.xaml.cs",
               "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DriverVoyageList.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\DriverVoyageList.xaml.cs",
               "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DriverVoyageList.xaml.cs",
               "RelativeToolTip": "Pages\\DriverVoyageList.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T05:32:44.369Z",
+              "WhenOpened": "2025-11-04T06:28:26.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VoyagesList.xaml.cs",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\VoyagesList.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\VoyagesList.xaml.cs",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\VoyagesList.xaml.cs",
+              "RelativeToolTip": "Pages\\VoyagesList.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:28:18.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DriverVoyageList.xaml",
-              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DriverVoyageList.xaml",
-              "RelativeDocumentMoniker": "Pages\\DriverVoyageList.xaml",
-              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\DriverVoyageList.xaml",
-              "RelativeToolTip": "Pages\\DriverVoyageList.xaml",
+              "Title": "VoyagesList.xaml",
+              "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\VoyagesList.xaml",
+              "RelativeDocumentMoniker": "Pages\\VoyagesList.xaml",
+              "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Automation Of Bus Routes\\Pages\\VoyagesList.xaml",
+              "RelativeToolTip": "Pages\\VoyagesList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T04:35:13.636Z",
+              "WhenOpened": "2025-11-04T06:15:45.288Z",
               "EditorCaption": ""
             }
           ]
