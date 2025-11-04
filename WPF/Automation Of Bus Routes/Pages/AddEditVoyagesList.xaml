@@ -9,6 +9,50 @@
       Title="AddEditVoyagesList">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Номер рейса:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0"/>
+        <TextBox Name="VoyageID" Text=" {Binding ID}" Grid.Row="0" Grid.Column="1" Width="400" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+
+        <TextBlock Text="Компания:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="NameCompanyBox" Text="{Binding NameCompany, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" Width="400" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+
+        <TextBlock Text="Маршрут:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
+        <ComboBox x:Name="ComboRoute"
+          Grid.Row="2" Grid.Column="1"
+          Width="400" Height="80" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"
+          SelectedItem="{Binding Route, Mode=TwoWay}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="6">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock FontWeight="Bold" Text="{Binding ID, StringFormat=Маршрут {0}}"/>
+                            <TextBlock Text="{Binding PointOfDeparture, StringFormat=От: {0}}"/>
+                            <TextBlock Text="{Binding Destination, StringFormat=До: {0}}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock Text="Дата отправления:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="0"/>
+        <DatePicker x:Name="DepartureDatePicker" SelectedDate="{Binding DepartureDate, Mode=TwoWay}" Grid.Row="3" Grid.Column="1" Width="400" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+
+        <TextBlock Text="Дата прибытия:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="0"/>
+        <DatePicker x:Name="ArrivalDatePicker" SelectedDate="{Binding ArrivalDate, Mode=TwoWay}" Grid.Row="4" Grid.Column="1" Width="400" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+
+        <Button Content="Сохранить" Grid.Row="5" Grid.ColumnSpan="2" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnSave_Click"/>
     </Grid>
 </Page>

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Automation_Of_Bus_Routes.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="1200"
-      Title="DriverVoyageList">
+      Title="DriverVoyageList" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,7 +18,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер рейса" Binding="{Binding Voyage.ID}" Width="*"/>
                 <DataGridTextColumn Header="Компания" Binding="{Binding Voyage.NameCompany}" Width="*"/>
-                <DataGridTextColumn Header="Номер маршрута" Binding="{Binding Route.ID}" Width="*"/>
+                <DataGridTextColumn Header="Номер маршрута" Binding="{Binding Voyage.Route.ID}" Width="*"/>
                 <DataGridTextColumn Header="Пункт отправления" Binding="{Binding Voyage.Route.PointOfDeparture}" Width="*"/>
                 <DataGridTextColumn Header="Пункт назначения" Binding="{Binding Voyage.Route.Destination}" Width="*"/>
                 <DataGridTextColumn Header="Дата отправления" Binding="{Binding Voyage.DepartureDate}" Width="*"/>

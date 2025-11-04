@@ -9,6 +9,78 @@
       Title="AddEditDriverVoyageList">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Рейс:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="Водитель:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
+
+        <!--<ComboBox x:Name="ComboDriver" DisplayMemberPath="ID" SelectedValuePath="ID" SelectedValue="{Binding DriverID, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" Width="300" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+        <ComboBox x:Name="ComboVoyage" DisplayMemberPath="ID" SelectedValuePath="ID" SelectedValue="{Binding VoyageID, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Width="300" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>-->
+
+        <ComboBox x:Name="ComboDriver"
+          SelectedValuePath="ID"
+          SelectedValue="{Binding DriverID, Mode=TwoWay}"
+          Grid.Row="1" Grid.Column="1" Width="300" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1} {2}">
+                                <Binding Path="LastName" />
+                                <Binding Path="FirstName" />
+                                <Binding Path="Patronymic" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <ComboBox x:Name="ComboVoyage"
+          SelectedValuePath="ID"
+          SelectedValue="{Binding VoyageID, Mode=TwoWay}"
+          Grid.Row="0" Grid.Column="1"
+          Width="500" Height="80"
+          VerticalAlignment="Center" HorizontalAlignment="Left"
+          Margin="10 0 0 0"
+          IsTextSearchEnabled="False">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="6">
+                        <StackPanel Orientation="Vertical">
+                            <!-- Первая строка: номер и компания -->
+                            <TextBlock FontWeight="Bold" Text="{Binding ID, StringFormat=Рейс {0}}"/>
+                            <TextBlock Text="{Binding NameCompany, TargetNullValue='Без компании'}" />
+                            <!-- Вторая строка: маршрут -->
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="Маршрут: {0} - {1}">
+                                        <Binding Path="Route.PointOfDeparture" />
+                                        <Binding Path="Route.Destination" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                            <!-- Третья строка: даты отправления/прибытия -->
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="Отправление: {0:dd.MM.yyyy HH:mm}   Прибытие: {1:dd.MM.yyyy HH:mm}">
+                                        <Binding Path="DepartureDate" />
+                                        <Binding Path="ArrivalDate" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button FontSize="14" Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="8" Name="BtnSave" HorizontalAlignment="Center" Click="BtnSave_Click"/>
     </Grid>
 </Page>

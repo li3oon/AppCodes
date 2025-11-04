@@ -20,9 +20,45 @@ namespace Automation_Of_Bus_Routes.Pages
     /// </summary>
     public partial class AddEditDriverVoyageList : Page
     {
-        public AddEditDriverVoyageList()
+        private DriverVoyage _currentDriverVoyage = new DriverVoyage();
+        public AddEditDriverVoyageList(DriverVoyage currentDriverVoyage)
         {
             InitializeComponent();
+            if (currentDriverVoyage != null)
+                _currentDriverVoyage = currentDriverVoyage;
+            DataContext = _currentDriverVoyage;
+
+            ComboDriver.ItemsSource = DataBase3.GetContext().Driver.ToList();
+            ComboVoyage.ItemsSource = DataBase3.GetContext().Voyage.ToList();
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            _currentDriverVoyage.Driver = ComboDriver.SelectedItem as Driver;
+            _currentDriverVoyage.Voyage = ComboVoyage.SelectedItem as Voyage;
+
+            StringBuilder errors = new StringBuilder();
+            if (_currentDriverVoyage.Driver == null)
+                errors.AppendLine("Укажите водителя");
+            if (_currentDriverVoyage.Voyage == null)
+                errors.AppendLine("Укажите рейс");
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+            if (_currentDriverVoyage.ID == 0)
+                DataBase3.GetContext().DriverVoyage.Add(_currentDriverVoyage);
+            try
+            {
+                DataBase3.GetContext().SaveChanges();
+                MessageBox.Show("Информация сохранена");
+                Manager.MainFrame.GoBack();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
     }
 }

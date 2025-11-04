@@ -96,17 +96,32 @@ namespace Automation_Of_Bus_Routes.Pages
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AddEditDriverVoyageList((sender as Button).DataContext as DriverVoyage));
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddEditDriverVoyageList());
+            Manager.MainFrame.Navigate(new AddEditDriverVoyageList(null));
         }
 
         private void BtnDel_Click(object sender, RoutedEventArgs e)
         {
-
+            var DriverVoyagesForRemoving = DriverVoyageGrid.SelectedItems.Cast<DriverVoyage>().ToList();
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {DriverVoyagesForRemoving.Count()} элементов?", "Внимание",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    DataBase3.GetContext().DriverVoyage.RemoveRange(DriverVoyagesForRemoving);
+                    DataBase3.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены!");
+                    DriverVoyageGrid.ItemsSource = DataBase3.GetContext().DriverVoyage.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }   
         }
 
         private void StartDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -229,6 +244,18 @@ namespace Automation_Of_Bus_Routes.Pages
 
                 return false;
             };
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                DataBase3.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DriverVoyageGrid.ItemsSource = DataBase3.GetContext().DriverVoyage
+                    .Include(dv => dv.Voyage.Route)
+                    .Include(dv => dv.Driver)
+                    .ToList();
+            }
         }
     }
 }
