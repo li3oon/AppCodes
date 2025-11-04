@@ -6,9 +6,28 @@
       xmlns:local="clr-namespace:Libraly.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ReaderBookList">
+      Title="ReaderBookList" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="ReaderBookGrid" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер читателя в системе" Binding="{Binding ID}" Width="*"/>
+                <DataGridTextColumn Header="ISBN" Binding="{Binding Book.ISBN}" Width="*"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Book.NameBook}" Width="*"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактирование" Name="BtnEdit" Click="BtnEdit_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button FontSize="14" HorizontalAlignment="Left" Width="200" Grid.Row="1" Name="BtnAdd" Click="BtnAdd_Click"  Content="Добавить"/>
+        <Button FontSize="14" HorizontalAlignment="Right" Width="200" Grid.Row="1" Name="BtnDel" Click="BtnDel_Click" Content="Удалить"/>
     </Grid>
 </Page>

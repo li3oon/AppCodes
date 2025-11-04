@@ -34,5 +34,6 @@
         </DataGrid>
         <Button FontSize="14" HorizontalAlignment="Left" Width="200" Grid.Row="1" Name="BtnAdd" Click="BtnAdd_Click"  Content="Добавить"/>
         <Button FontSize="14" HorizontalAlignment="Right" Width="200" Grid.Row="1" Name="BtnDel" Click="BtnDel_Click" Content="Удалить"/>
+        <TextBox Grid.Row="1" Width="200" Height="30" FontSize="14" Name="txtfilter1" TextChanged="txtFilterCatalog1" VerticalAlignment="Center"/>
     </Grid>
 </Page>

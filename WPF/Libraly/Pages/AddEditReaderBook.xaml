@@ -9,6 +9,22 @@
       Title="AddEditReaderBook">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0"><Run Text="Номер читателя"/><LineBreak/><Run Text=" в системе:"/></TextBlock>
+        <TextBlock Text="ISBN:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
+
+        <ComboBox x:Name="ComboReaderID" DisplayMemberPath="ID" SelectedValuePath="ID" SelectedValue="{Binding ReaderID, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Width="300" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+        <ComboBox x:Name="ComboBook" DisplayMemberPath="ISBN" SelectedValuePath="ISBN" SelectedValue="{Binding BookID, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" Width="300" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+
+        <Button FontSize="14" Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="8" Name="BtnSave" HorizontalAlignment="Center" Click="BtnSave_Click"/>
     </Grid>
 </Page>

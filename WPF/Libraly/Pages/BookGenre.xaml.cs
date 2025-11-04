@@ -21,6 +21,7 @@ namespace Libraly.Pages
     /// </summary>
     public partial class BookGenre : Page
     {
+        private List<Libraly.BookGenre> _allBookGenres;
         private User _currentUser;
         public BookGenre(User currentUser)
         {
@@ -31,6 +32,7 @@ namespace Libraly.Pages
 
             // Проверка роли и отображение/скрытие элементов управления
             ConfigureUIBasedOnRole();
+            LoadData();
         }
 
         private void ConfigureUIBasedOnRole()
@@ -65,6 +67,16 @@ namespace Libraly.Pages
             }
         }
 
+        private void LoadData()
+        {
+            _allBookGenres = DataBase2.GetContext().BookGenre
+                .Include(bg => bg.Book)
+                .Include(bg => bg.Genre)
+                .ToList();
+
+            BookGenreGrid.ItemsSource = _allBookGenres;
+        }
+
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AddEditBookGenre(_currentUser, (sender as Button).DataContext as Libraly.BookGenre));
@@ -95,6 +107,22 @@ namespace Libraly.Pages
             }
         }
 
+        private void txtFilterCatalog1(object sender, TextChangedEventArgs e)
+        {
+            string filterText = txtfilter1.Text.ToLower();
+
+            if (string.IsNullOrWhiteSpace(filterText))
+            {
+                BookGenreGrid.ItemsSource = _allBookGenres;
+            }
+            else
+            {
+                BookGenreGrid.ItemsSource = _allBookGenres
+                    .Where(bg => bg.Genre != null &&
+                                 bg.Genre.NameGenre.ToLower().Contains(filterText))
+                    .ToList();
+            }
+        }
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (Visibility == Visibility.Visible)
