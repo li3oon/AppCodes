@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\bookgenre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\bookgenre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\bookgenre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\bookgenre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\readerbooklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\bookgenre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\bookgenre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\pages\\readerbooklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\readerbooklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\addeditreaderbook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\pages\\addeditreaderbook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\addeditreaderbook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|d:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\appcodes\\wpf\\libraly\\pages\\addeditbookgenre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\pages\\addeditbookgenre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5BCEB3E-D2E8-47DC-B3B5-4539E8E1A8DC}|Libraly.csproj|solutionrelative:pages\\addeditbookgenre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,12 +46,11 @@
               "RelativeToolTip": "Pages\\ReaderBookList.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAADgv0wAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T00:34:37.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T00:34:37.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BookGenre.xaml",
               "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\Pages\\BookGenre.xaml",
               "RelativeDocumentMoniker": "Pages\\BookGenre.xaml",
@@ -60,6 +59,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-04T00:38:32.125Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -71,8 +74,7 @@
               "RelativeToolTip": "Pages\\AddEditReaderBook.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T00:46:49.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T00:46:49.465Z"
             },
             {
               "$type": "Document",
@@ -84,8 +86,7 @@
               "RelativeToolTip": "Pages\\AddEditBookGenre.xaml.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAowFkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T00:46:27.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T00:46:27.122Z"
             }
           ]
         },
@@ -95,13 +96,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookGenre.xaml.cs",
               "DocumentMoniker": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\Pages\\BookGenre.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\BookGenre.xaml.cs",
               "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\Pages\\BookGenre.xaml.cs",
               "RelativeToolTip": "Pages\\BookGenre.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwD4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T00:38:55.732Z",
               "EditorCaption": ""

@@ -58,9 +58,9 @@ namespace Libraly.Pages
                 {
                     if (column is DataGridTemplateColumn templateColumn)
                     {
-                        if (templateColumn.Header == null)
+                        if (BookGenreGrid.Columns.Count > 0)
                         {
-                            templateColumn.Visibility = Visibility.Collapsed;
+                            BookGenreGrid.Columns[BookGenreGrid.Columns.Count - 1].Visibility = Visibility.Collapsed;
                         }
                     }
                 }

@@ -1,0 +1,34 @@
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.csproj.AssemblyReference.cache
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\MainWindow.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\AddEditDriverVoyageList.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\AddEditVoyagesList.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\DispatcherView.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\DriverVoyageList.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\Login.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\VoyagesList.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\App.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes_Content.g.cs
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes_MarkupCompile.cache
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes_MarkupCompile.lref
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\Automation Of Bus Routes.exe.config
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\Automation Of Bus Routes.exe
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\Automation Of Bus Routes.pdb
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\EntityFramework.dll
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\EntityFramework.SqlServer.dll
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\EntityFramework.xml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\bin\Debug\EntityFramework.SqlServer.xml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\MainWindow.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\AddEditDriverVoyageList.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\AddEditVoyagesList.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\DispatcherView.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\DriverVoyageList.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\Login.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Pages\VoyagesList.baml
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.g.resources
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation_Of_Bus_Routes.Properties.Resources.resources
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.csproj.GenerateResource.cache
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.csproj.CoreCompileInputs.cache
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automati.27B8002B.Up2Date
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.exe
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.pdb
+D:\техникум\гитхаб\AppCodes\WPF\Automation Of Bus Routes\obj\Debug\Automation Of Bus Routes.exe.config
