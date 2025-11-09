@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -59,10 +55,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-04T00:38:32.125Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -102,7 +94,7 @@
               "RelativeDocumentMoniker": "Pages\\BookGenre.xaml.cs",
               "ToolTip": "D:\\\u0442\u0435\u0445\u043D\u0438\u043A\u0443\u043C\\\u0433\u0438\u0442\u0445\u0430\u0431\\AppCodes\\WPF\\Libraly\\Pages\\BookGenre.xaml.cs",
               "RelativeToolTip": "Pages\\BookGenre.xaml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwD4AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwHkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T00:38:55.732Z",
               "EditorCaption": ""
